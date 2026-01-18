@@ -5,6 +5,8 @@ DAWInfoDisplayEditor::DAWInfoDisplayEditor(DAWInfoDisplayProcessor& p)
     : AudioProcessorEditor(&p), processor(p)
 {
     setSize(500, 350);
+    setResizable(true, true);
+    setResizeLimits(400, 300, 2000, 1500);
 
     // Display mode combo box
     addAndMakeVisible(displayModeCombo);
